@@ -43,7 +43,6 @@ body {
     width: 100%;
 }
 
-/* SIDENAV */
 .sidenav {
     width: 220px;
     height: 100vh;
@@ -166,7 +165,6 @@ body {
     background: rgba(0, 122, 255, 0.2);
 }
 
-/* Tier Header */
 .tier-section {
     margin-top: 3rem;
 }
@@ -199,7 +197,6 @@ body {
     margin: 0;
 }
 
-/* Installation Path */
 .installation-path {
     margin: 2.5rem auto;
     max-width: 600px;
@@ -214,7 +211,7 @@ body {
 
 .path-step .step-number {
     flex-shrink: 0;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     background: var(--accent);
     color: white;
@@ -222,8 +219,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .path-step .step-content {
@@ -252,7 +253,6 @@ body {
     padding-left: 20px;
 }
 
-/* Navigation Category Styling */
 .nav-category {
     color: var(--text-tertiary);
     font-size: 0.75rem;
@@ -262,7 +262,6 @@ body {
     font-weight: 600;
 }
 
-/* MAIN CONTENT */
 .main-content {
     flex: 1;
     margin-left: 220px;
@@ -271,7 +270,6 @@ body {
     width: calc(100% - 220px);
 }
 
-/* HERO SECTION */
 .hero-section {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
@@ -298,7 +296,6 @@ body {
     font-weight: 400;
 }
 
-/* CONTENT SECTIONS */
 .content-section {
     margin-bottom: 3rem;
     max-width: 900px;
@@ -362,7 +359,6 @@ body {
     font-weight: 600;
 }
 
-/* SERIES PARTS */
 h2 {
     font-size: 2rem;
     font-weight: 600;
@@ -425,7 +421,6 @@ h2 {
     border-left: 3px solid var(--accent);
 }
 
-/* LINK STYLES */
 .simple-link {
     display: inline-flex;
     align-items: center;
@@ -490,7 +485,6 @@ h2 {
     transform: translateX(-4px);
 }
 
-/* FINAL BOX */
 .simple-box {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -539,7 +533,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* NAVIGATION LINKS */
 .content-section > div:last-child {
     display: flex;
     justify-content: center;
@@ -553,7 +546,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* FOOTER */
 .simple-footer {
     padding: 2rem 0;
     color: var(--text-secondary);
@@ -573,7 +565,6 @@ h2 {
     color: var(--text-tertiary);
 }
 
-/* ARTICLE SPECIFIC STYLES */
 .content-section .article-section {
     margin-bottom: 3rem;
     max-width: 800px;
@@ -598,7 +589,6 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Comparison boxes */
 .comparison {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -654,7 +644,6 @@ h2 {
     color: var(--text-primary);
 }
 
-/* Note boxes */
 .note {
     background: rgba(0, 122, 255, 0.05);
     border: 1px solid rgba(0, 122, 255, 0.2);
@@ -742,7 +731,6 @@ h2 {
     font-weight: bold;
 }
 
-/* Characteristics/Insights grid */
 .characteristics,
 .insights {
     display: grid;
@@ -784,7 +772,6 @@ h2 {
     color: var(--text-secondary);
 }
 
-/* Process steps */
 .process {
     margin: 2rem auto;
     max-width: 800px;
@@ -800,16 +787,20 @@ h2 {
 
 .step-number {
     flex-shrink: 0;
-    width: 36px;
-    height: 36px;
+    min-width: 40px;
+    height: 40px;
     background: var(--accent);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .step-content {
@@ -829,7 +820,6 @@ h2 {
     color: var(--text-secondary);
 }
 
-/* DISTINCTION TABLE - IMPROVED */
 .distinction-table {
     width: 100%;
     overflow-x: auto;
@@ -906,7 +896,6 @@ h2 {
     padding-right: 1.5rem;
 }
 
-/* Navigation in article */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -928,7 +917,6 @@ h2 {
     margin-right: auto;
 }
 
-/* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -951,13 +939,11 @@ h2 {
     color: var(--text-primary);
 }
 
-/* FOCUS STATES */
 :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
 }
 
-/* THRESHOLD SECTION */
 .threshold {
     display: flex;
     align-items: center;
@@ -1018,7 +1004,6 @@ h2 {
     font-weight: 600;
 }
 
-/* GARDEN PHILOSOPHY */
 .garden-philosophy h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -1101,7 +1086,6 @@ h2 {
     font-weight: 600;
 }
 
-/* ENTRY POINTS */
 .entry-points h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -1203,7 +1187,6 @@ h2 {
     transform: translateX(4px);
 }
 
-/* INVITATION */
 .invitation {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -1259,7 +1242,6 @@ h2 {
     font-weight: 600;
 }
 
-/* THRESHOLD NAVIGATION */
 .threshold-navigation {
     text-align: center;
     margin: 3rem 0;
@@ -1307,7 +1289,6 @@ h2 {
     transform: translateX(4px) rotate(45deg);
 }
 
-/* READING PROGRESS */
 .reading-progress {
     position: fixed;
     top: 0;
@@ -1328,7 +1309,6 @@ h2 {
     transition: width 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .sidenav {
         transform: translateX(-100%);
@@ -1601,7 +1581,6 @@ h2 {
     }
 }
 
-/* SUBTLE ANIMATIONS */
 @media (prefers-reduced-motion: no-preference) {
     .series-part,
     .card,
