@@ -49,26 +49,23 @@
 
         <main class="main-content">
 
-            <!-- Hero Section -->
             <section class="hero-section">
                 <div class="hero-content">
                     <h1>10-Year Horizon</h1>
                     <p class="hero-subtitle">Thinking in decades, not days</p>
                     <div class="article-meta">
-                        <p><em>"The best time to plant a tree was 20 years ago. The second best time is now."</em></p>
+                        <p>"The best time to plant a tree was 20 years ago. The second best time is now."</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Content -->
             <article class="content-section">
 
-                <!-- Opening Hook -->
-                <div class="article-section fade-in">
-                    <div class="simple-box" style="border-left:4px solid var(--accent);">
-                        <p style="font-size:1.1rem; font-style:italic;">
-                            Most people run their lives like they're debugging code—fixing what's broken today, optimizing for this sprint, reacting to immediate errors.<br>
-                            Systems that last run like they're designing architecture—planning for decades of use, building for multiple generations, creating foundations others can build upon.<br>
+                <div class="article-section">
+                    <div class="simple-box accent-border-left">
+                        <p class="quote-style">
+                            Most people run their lives like they're debugging code-fixing what's broken today, optimizing for this sprint, reacting to immediate errors.<br>
+                            Systems that last run like they're designing architecture-planning for decades of use, building for multiple generations, creating foundations others can build upon.<br>
                             This is the difference between running scripts and writing legacy systems.
                         </p>
                     </div>
@@ -76,15 +73,17 @@
                     <p>After installing recovery protocols, we expand our temporal horizon beyond individual lifespan. Most systems fail because they're optimized for human-scale timeframes (days, weeks, quarters). Systems that last operate on geological-scale timeframes (decades, centuries, generations).</p>
                     
                     <div class="note">
-                        <h4 style="text-align: center;"><i class="fas fa-hourglass"></i> The System Insight</h4><br>
-                        <p>Think of time horizon as your system's <strong>planning algorithm</strong>. Short-horizon systems use greedy algorithms—optimize for immediate payoff. Long-horizon systems use dynamic programming—sacrifice immediate gains for superior long-term outcomes. The time horizon determines which problems you can solve, which opportunities you can see, which legacy you can build.</p>
+                        <div class="note-header">
+                            <i class="fas fa-hourglass"></i>
+                            <h4>The System Insight</h4>
+                        </div>
+                        <p>Think of time horizon as your system's <strong>planning algorithm</strong>. Short-horizon systems use greedy algorithms-optimize for immediate payoff. Long-horizon systems use dynamic programming-sacrifice immediate gains for superior long-term outcomes. The time horizon determines which problems you can solve, which opportunities you can see, which legacy you can build.</p>
                     </div>
                 </div>
 
                 <div class="simple-divider"></div>
 
-                <!-- The Three Time Horizons -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Three Time Horizons</h3>
                     <p>Different horizons create different systems, different lives, different legacies.</p>
 
@@ -107,7 +106,7 @@
                             <ul>
                                 <li><strong>Timeframe:</strong> Decades</li>
                                 <li><strong>System analog:</strong> Product development</li>
-                                <strong>Identity:</strong> Family, organization</li>
+                                <li><strong>Identity:</strong> Family, organization</li>
                                 <li><strong>Question:</strong> "What benefits my children?"</li>
                                 <li><strong>Values:</strong> Stability, quality, legacy</li>
                                 <li><strong>Architecture:</strong> Durable, maintainable</li>
@@ -131,57 +130,68 @@
                     </div>
 
                     <div class="simple-box">
-                        <h4 style="text-align: center;">The Horizon Determines the Game</h4><br>
+                        <h4>The Horizon Determines the Game</h4>
                         <p>Playing a short-horizon game against long-horizon players is like bringing a knife to an architecture competition. You might win the immediate battle (attention, quick money, viral fame) but you'll lose the war (legacy, lasting impact, multi-generational significance).</p>
                         <p><strong>Short horizon asks:</strong> "How can I optimize this quarter?"</p>
                         <p><strong>Long horizon asks:</strong> "What will matter in 100 years?"</p>
-                        <p>They're not just different questions—they're different games with different rules, different players, different victory conditions.</p>
+                        <p>They're not just different questions-they're different games with different rules, different players, different victory conditions.</p>
                     </div>
                 </div>
 
                 <div class="simple-divider"></div>
 
-                <!-- The Lindy Effect Revisited -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Lindy Effect: Time as Quality Filter</h3>
                     <p>How to identify what deserves your long-horizon investment.</p>
 
                     <div class="characteristics">
                         <div class="characteristic">
-                            <h4><i class="fas fa-filter"></i> The Lindy Filter</h4>
+                            <div class="characteristic-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h4>The Lindy Filter</h4>
                             <p><strong>The Rule:</strong> Future life expectancy is proportional to current age.</p>
-                            <p><strong>Application:</strong> When choosing what to build, learn, or invest in:</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function lindyFilter(technology) {
-    if (technology.age < 10) {
-        return "Experimental, likely ephemeral";
-    } else if (technology.age >= 10 && technology.age < 50) {
-        return "Possibly durable, not proven";
-    } else if (technology.age >= 50 && technology.age < 100) {
-        return "Durable, likely to last";
-    } else {
-        return "Timeless, likely to outlive us all";
-    }
-}</pre>
+                            <p><strong>Application:</strong> When choosing what to build, learn, or invest in.</p>
+                            <div class="code-block">
+                                <div class="code-header">Lindy Filter Function</div>
+                                <div class="code-content">
+                                    function lindyFilter(technology) {<br>
+                                    &nbsp;&nbsp;if (technology.age < 10) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;return "Experimental, likely ephemeral";<br>
+                                    &nbsp;&nbsp;} else if (technology.age >= 10 && technology.age < 50) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;return "Possibly durable, not proven";<br>
+                                    &nbsp;&nbsp;} else if (technology.age >= 50 && technology.age < 100) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;return "Durable, likely to last";<br>
+                                    &nbsp;&nbsp;} else {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;return "Timeless, likely to outlive us all";<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Examples:</strong> Books (500+ years) vs tweets (15 years). Meditation (2,500+ years) vs latest mindfulness app (2 years). Writing (5,000+ years) vs latest social media platform (variable).</p>
                         </div>
                         <div class="characteristic">
-                            <h4><i class="fas fa-balance-scale"></i> The Lindy Investment Strategy</h4>
-                            <p><strong>The Allocation:</strong> Distribute your learning/building time proportionally to Lindy score:</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function allocateTime() {
-    const investments = [
-        {name: "Writing", age: 5000, allocation: 40},
-        {name: "Mathematics", age: 4000, allocation: 30},
-        {name: "Philosophy", age: 3000, allocation: 20},
-        {name: "Latest Tech", age: 5, allocation: 10}
-    ];
-    
-    // Sort by age (Lindy)
-    investments.sort((a,b) => b.age - a.age);
-    
-    return investments;
-}</pre>
+                            <div class="characteristic-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>The Lindy Investment Strategy</h4>
+                            <p><strong>The Allocation:</strong> Distribute your learning/building time proportionally to Lindy score.</p>
+                            <div class="code-block">
+                                <div class="code-header">Time Allocation Function</div>
+                                <div class="code-content">
+                                    function allocateTime() {<br>
+                                    &nbsp;&nbsp;const investments = [<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{name: "Writing", age: 5000, allocation: 40},<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{name: "Mathematics", age: 4000, allocation: 30},<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{name: "Philosophy", age: 3000, allocation: 20},<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{name: "Latest Tech", age: 5, allocation: 10}<br>
+                                    &nbsp;&nbsp;];<br><br>
+                                    &nbsp;&nbsp;// Sort by age (Lindy)<br>
+                                    &nbsp;&nbsp;investments.sort((a,b) => b.age - a.age);<br><br>
+                                    &nbsp;&nbsp;return investments;<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>The Rationale:</strong> Time is the ultimate stress test. What has survived centuries of changing conditions has proven its value. What's new hasn't been tested. Allocate accordingly.</p>
                         </div>
                     </div>
@@ -189,212 +199,175 @@ function allocateTime() {
 
                 <div class="simple-divider"></div>
 
-                <!-- The Multi-Generational Protocols -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Multi-Generational Protocols</h3>
                     <p>How to design systems that outlive you.</p>
 
-                    <div class="framework-grid">
-                        <div class="framework-item">
-                            <div class="framework-icon">🏛️</div>
+                    <div class="characteristics">
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
                             <h4>The Cathedral Protocol</h4>
                             <p><strong>The Design:</strong> Start projects you won't live to see finished.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function startCathedral() {
-    const project = {
-        name: "100-Year Project",
-        timeline: 100, // years
-        completionLikelihood: "I won't see it",
-        value: "Foundation for others"
-    };
-    
-    // Key design principles
-    project.designPrinciples = [
-        "Simple enough for others to continue",
-        "Modular so parts can be replaced",
-        "Documented for future maintainers",
-        "Open for adaptation"
-    ];
-    
-    return project;
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Cathedral Project Function</div>
+                                <div class="code-content">
+                                    function startCathedral() {<br>
+                                    &nbsp;&nbsp;const project = {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;name: "100-Year Project",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;timeline: 100, // years<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;completionLikelihood: "I won't see it",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;value: "Foundation for others"<br>
+                                    &nbsp;&nbsp;};<br><br>
+                                    &nbsp;&nbsp;// Key design principles<br>
+                                    &nbsp;&nbsp;project.designPrinciples = [<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Simple enough for others to continue",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Modular so parts can be replaced",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Documented for future maintainers",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Open for adaptation"<br>
+                                    &nbsp;&nbsp;];<br><br>
+                                    &nbsp;&nbsp;return project;<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Why It Works:</strong> Cathedrals took centuries. Each builder worked on something they wouldn't see completed. This changes motivation from personal recognition to contribution to something larger.</p>
                         </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">🌳</div>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
                             <h4>The Tree-Planting Protocol</h4>
                             <p><strong>The Practice:</strong> Plant trees whose shade you'll never sit in.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function plantTree() {
-    const tree = {
-        species: "Oak", // Takes 50+ years to mature
-        purpose: "Shade for future generations",
-        planter: "Me",
-        beneficiary: "People I'll never meet"
-    };
-    
-    // The act changes your relationship to time
-    tree.effect = "Expands temporal identity beyond self";
-    
-    return tree;
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Tree Planting Function</div>
+                                    <div class="code-content">
+                                        function plantTree() {<br>
+                                        &nbsp;&nbsp;const tree = {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;species: "Oak", // Takes 50+ years to mature<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;purpose: "Shade for future generations",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;planter: "Me",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;beneficiary: "People I'll never meet"<br>
+                                        &nbsp;&nbsp;};<br><br>
+                                        &nbsp;&nbsp;// The act changes your relationship to time<br>
+                                        &nbsp;&nbsp;tree.effect = "Expands temporal identity beyond self";<br><br>
+                                        &nbsp;&nbsp;return tree;<br>
+                                        }
+                                    </div>
+                                </div>
                             <p><strong>Why It Works:</strong> Physical acts with long time horizons rewire your thinking. Planting a tree that matures in 50 years forces you to think in 50-year increments. It's a meditation in multi-generational thinking.</p>
                         </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">📜</div>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-scroll"></i>
+                            </div>
                             <h4>The Time Capsule Protocol</h4>
                             <p><strong>The Practice:</strong> Write letters to the future.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function writeToFuture() {
-    const letter = {
-        to: "Someone in 2124",
-        from: "Me in 2026",
-        content: "Explaining our world, our struggles, our hopes",
-        questions: "Asking about their world",
-        storage: "Physical, to be opened in 100 years"
-    };
-    
-    // The exercise
-    letter.effect = "Makes abstract long-term thinking concrete";
-    
-    return letter;
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Future Letter Function</div>
+                                <div class="code-content">
+                                    function writeToFuture() {<br>
+                                    &nbsp;&nbsp;const letter = {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;to: "Someone in 2124",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;from: "Me in 2026",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;content: "Explaining our world, our struggles, our hopes",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;questions: "Asking about their world",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;storage: "Physical, to be opened in 100 years"<br>
+                                    &nbsp;&nbsp;};<br><br>
+                                    &nbsp;&nbsp;// The exercise<br>
+                                    &nbsp;&nbsp;letter.effect = "Makes abstract long-term thinking concrete";<br><br>
+                                    &nbsp;&nbsp;return letter;<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Why It Works:</strong> Writing to a specific future person makes long-term thinking tangible. It forces consideration of what will last, what will change, what will matter across generations.</p>
-                        </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">🔗</div>
-                            <h4>The Chain Protocol</h4>
-                            <p><strong>The Design:</strong> See yourself as a link between generations.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function identityAsLink() {
-    const chain = {
-        previousLinks: "Ancestors, teachers, creators",
-        currentLink: "Me",
-        nextLinks: "Children, students, those I influence"
-    };
-    
-    // The shift
-    chain.perspective = "From 'What can I get?' to 'What can I pass on?'";
-    
-    return chain;
-}</pre>
-                            <p><strong>Why It Works:</strong> Most modern identity is individualistic. Chain identity is relational. You're not an isolated unit—you're a transition between what came before and what comes after. This changes everything about how you work, live, contribute.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="simple-divider"></div>
 
-                <!-- The 10-Year Decision Framework -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The 10-Year Decision Framework</h3>
                     <p>How to make decisions at decade-scale.</p>
 
-                    <div class="mastery-stages">
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">1</div>
+                    <div class="process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
                                 <h4>The 10/10/10 Rule</h4>
-                            </div>
-                            <div class="stage-description">
-                                <p><strong>The Protocol:</strong> Before any significant decision, ask:</p>
-                                <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function evaluateDecision(decision) {
-    const tenMinutes = decision.impactInTenMinutes;
-    const tenMonths = decision.impactInTenMonths;
-    const tenYears = decision.impactInTenYears;
-    
-    // Most people optimize for tenMinutes
-    // Long-horizon thinkers optimize for tenYears
-    
-    if (tenYears.positive && tenMinutes.negative) {
-        return "Probably correct long-term decision";
-    } else if (tenMinutes.positive && tenYears.negative) {
-        return "Probably destructive short-term optimization";
-    }
-    
-    return "Evaluate further";
-}</pre>
+                                <p><strong>The Protocol:</strong> Before any significant decision, ask.</p>
+                                <div class="code-block">
+                                    <div class="code-header">Decision Evaluation Function</div>
+                                    <div class="code-content">
+                                        function evaluateDecision(decision) {<br>
+                                        &nbsp;&nbsp;const tenMinutes = decision.impactInTenMinutes;<br>
+                                        &nbsp;&nbsp;const tenMonths = decision.impactInTenMonths;<br>
+                                        &nbsp;&nbsp;const tenYears = decision.impactInTenYears;<br><br>
+                                        &nbsp;&nbsp;// Most people optimize for tenMinutes<br>
+                                        &nbsp;&nbsp;// Long-horizon thinkers optimize for tenYears<br><br>
+                                        &nbsp;&nbsp;if (tenYears.positive && tenMinutes.negative) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return "Probably correct long-term decision";<br>
+                                        &nbsp;&nbsp;} else if (tenMinutes.positive && tenYears.negative) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return "Probably destructive short-term optimization";<br>
+                                        &nbsp;&nbsp;}<br><br>
+                                        &nbsp;&nbsp;return "Evaluate further";<br>
+                                        }
+                                    </div>
+                                </div>
                                 <p><strong>The Insight:</strong> Good long-term decisions often feel bad in the short term (delayed gratification). Bad long-term decisions often feel good immediately (instant gratification). The 10/10/10 rule surfaces this tension.</p>
                             </div>
                         </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">2</div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
                                 <h4>The Great-Grandchild Test</h4>
-                            </div>
-                            <div class="stage-description">
-                                <p><strong>The Protocol:</strong> For major life choices, ask:</p>
-                                <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function greatGrandchildTest(choice) {
-    // Imagine explaining this choice to your great-grandchild
-    const explanation = `I chose ${choice} because...`;
-    
-    // Would they be:
-    const reactions = {
-        proud: "You built something lasting",
-        confused: "You optimized for your time, not theirs",
-        ashamed: "You consumed what should have been theirs"
-    };
-    
-    // The test filters short-term thinking
-    return reactions.proud ? "Proceed" : "Reconsider";
-}</pre>
+                                <p><strong>The Protocol:</strong> For major life choices, ask.</p>
+                                <div class="code-block">
+                                    <div class="code-header">Great-Grandchild Test Function</div>
+                                    <div class="code-content">
+                                        function greatGrandchildTest(choice) {<br>
+                                        &nbsp;&nbsp;// Imagine explaining this choice to your great-grandchild<br>
+                                        &nbsp;&nbsp;const explanation = `I chose ${choice} because...`;<br><br>
+                                        &nbsp;&nbsp;// Would they be:<br>
+                                        &nbsp;&nbsp;const reactions = {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;proud: "You built something lasting",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;confused: "You optimized for your time, not theirs",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;ashamed: "You consumed what should have been theirs"<br>
+                                        &nbsp;&nbsp;};<br><br>
+                                        &nbsp;&nbsp;// The test filters short-term thinking<br>
+                                        &nbsp;&nbsp;return reactions.proud ? "Proceed" : "Reconsider";<br>
+                                        }
+                                    </div>
+                                </div>
                                 <p><strong>The Filter:</strong> This eliminates decisions that make sense in quarterly reports but look foolish across generations. Most corporate decisions, political decisions, and personal consumption decisions fail this test.</p>
                             </div>
                         </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">3</div>
-                                <h4>The Seventh Generation Principle</h4>
-                            </div>
-                            <div class="stage-description">
-                                <p><strong>The Protocol:</strong> From Iroquois philosophy:</p>
-                                <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function seventhGeneration(decision) {
-    // Consider impact on the seventh generation
-    const impacts = [
-        decision.impactOnGeneration(1), // Children
-        decision.impactOnGeneration(2), // Grandchildren
-        decision.impactOnGeneration(3), // Great-grandchildren
-        decision.impactOnGeneration(7)  // Seventh generation
-    ];
-    
-    // Most decisions have negative generation 7 impact
-    // because they externalize costs to the future
-    
-    return impacts[6]; // Generation 7 impact
-}</pre>
-                                <p><strong>The Expansion:</strong> This forces consideration of externalities, systemic effects, compounding consequences. What seems like a small convenience now (plastic use, debt, resource consumption) becomes a massive burden across seven generations.</p>
-                            </div>
-                        </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">4</div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
                                 <h4>The Legacy Audit</h4>
-                            </div>
-                            <div class="stage-description">
-                                <p><strong>The Protocol:</strong> Quarterly review of your work:</p>
-                                <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function legacyAudit() {
-    const work = getRecentWork();
-    
-    const questions = [
-        "What will this mean in 10 years?",
-        "What will this mean in 50 years?",
-        "What will this mean in 100 years?",
-        "Will anyone care after I'm gone?",
-        "Does this create or consume value?",
-        "Does this build or extract foundations?"
-    ];
-    
-    const answers = questions.map(q => answer(q, work));
-    
-    // Calculate legacy score
-    const legacyScore = answers.filter(a => a.positive).length;
-    
-    return legacyScore;
-}</pre>
+                                <p><strong>The Protocol:</strong> Quarterly review of your work.</p>
+                                <div class="code-block">
+                                    <div class="code-header">Legacy Audit Function</div>
+                                    <div class="code-content">
+                                        function legacyAudit() {<br>
+                                        &nbsp;&nbsp;const work = getRecentWork();<br><br>
+                                        &nbsp;&nbsp;const questions = [<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"What will this mean in 10 years?",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"What will this mean in 50 years?",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"What will this mean in 100 years?",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"Will anyone care after I'm gone?",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"Does this create or consume value?",<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"Does this build or extract foundations?"<br>
+                                        &nbsp;&nbsp;];<br><br>
+                                        &nbsp;&nbsp;const answers = questions.map(q => answer(q, work));<br><br>
+                                        &nbsp;&nbsp;// Calculate legacy score<br>
+                                        &nbsp;&nbsp;const legacyScore = answers.filter(a => a.positive).length;<br><br>
+                                        &nbsp;&nbsp;return legacyScore;<br>
+                                        }
+                                    </div>
+                                </div>
                                 <p><strong>The Metric:</strong> Most performance reviews measure quarterly output. Legacy audits measure century-scale impact. They're different metrics for different games.</p>
                             </div>
                         </div>
@@ -403,8 +376,7 @@ function legacyAudit() {
 
                 <div class="simple-divider"></div>
 
-                <!-- Long-Horizon Pitfalls -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>Long-Horizon Pitfalls: System Errors to Avoid</h3>
                     
                     <div class="danger-card">
@@ -421,7 +393,7 @@ function legacyAudit() {
                     <div class="danger-card">
                         <div class="danger-header">
                             <i class="fas fa-calendar-day"></i>
-                        <h4>The Present Neglect</h4>
+                            <h4>The Present Neglect</h4>
                         </div>
                         <div class="danger-item">
                             <strong>The Bug:</strong> Becoming so focused on the distant future that you neglect the present.
@@ -436,12 +408,12 @@ function legacyAudit() {
                         </div>
                         <div class="danger-item">
                             <strong>The Bug:</strong> Assuming you can predict what will be valuable centuries from now.
-                            <p><strong>The Patch:</strong> The goal isn't prediction—it's creating things robust enough to be valuable across many possible futures. Focus on durable principles (wisdom, beauty, truth) not specific predictions (this technology, that trend).</p>
+                            <p><strong>The Patch:</strong> The goal isn't prediction-it's creating things robust enough to be valuable across many possible futures. Focus on durable principles (wisdom, beauty, truth) not specific predictions (this technology, that trend).</p>
                         </div>
                     </div>
                     
                     <div class="simple-box">
-                        <h4 style="text-align: center;"><i class="fas fa-compass"></i> The Horizon Navigation System</h4><br>
+                        <h4>The Horizon Navigation System</h4>
                         <p>Balance across time horizons:</p>
                         <div class="metrics-grid">
                             <div class="metric-item">
@@ -463,12 +435,11 @@ function legacyAudit() {
 
                 <div class="simple-divider"></div>
 
-                <!-- The Long-Horizon Mantra -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Long-Horizon Mantra</h3>
                     
-                    <div class="simple-box" style="text-align:center; padding:2rem;">
-                        <p style="font-size:1.1rem; font-style:italic; line-height:1.8;">
+                    <div class="simple-box mantra-box">
+                        <p class="mantra-text">
                             Let me think in decades, not days.<br>
                             Let me build for centuries, not quarters.<br>
                             Let me plant trees whose shade I'll never sit in.<br>
@@ -488,25 +459,23 @@ function legacyAudit() {
 
                 <div class="simple-divider"></div>
 
-                <!-- Navigation -->
                 <div class="navigation">
                     <a href="part-4-recovery-protocols.html" class="nav-link-backward">
                         <i class="fas fa-arrow-left"></i> Previous: Recovery Protocols
                     </a>
-                    <a href="part-6-enduring-foundations.html" class="nav-link-primary">
+                    <a href="part-6-enduring-foundations.html" class="nav-link-forward">
                         Continue to Part 6: Enduring Foundations <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <div class="progress">
-                    Part 5 of 6 • Systems That Last Series • Temporal Layer
+                    Part 5 of 6 - Systems That Last Series - Temporal Layer
                 </div>
 
             </article>
 
-            <!-- Footer -->
             <div class="simple-footer">
-                <p>Olem's OS · 2026</p>
+                <p>Olem's OS - 2026</p>
                 <p class="footer-subtext">Installing what works, uninstalling what doesn't.</p>
             </div>
         </main>
