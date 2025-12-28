@@ -49,42 +49,41 @@
 
         <main class="main-content">
 
-            <!-- Hero Section -->
             <section class="hero-section">
                 <div class="hero-content">
                     <h1>Anti-fragile Design</h1>
                     <p class="hero-subtitle">Systems that gain from disorder</p>
                     <div class="article-meta">
-                        <p><em>"What doesn't kill my system makes it stronger."</em></p>
+                        <p>"What doesn't kill my system makes it stronger."</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Content -->
             <article class="content-section">
 
-                <!-- Opening Hook -->
-                <div class="article-section fade-in">
-                    <div class="simple-box" style="border-left:4px solid var(--accent);">
-                        <p style="font-size:1.1rem; font-style:italic;">
-                            Most personal systems are like cheap servers in a perfect data center—they work until the power flickers, then they crash.<br>
-                            Anti-fragile systems are like distributed networks—each node failure makes the network smarter, more resilient, more capable.<br>
+                <div class="article-section">
+                    <div class="simple-box accent-border-left">
+                        <p class="quote-style">
+                            Most personal systems are like cheap servers in a perfect data center-they work until the power flickers, then they crash.<br>
+                            Anti-fragile systems are like distributed networks-each node failure makes the network smarter, more resilient, more capable.<br>
                             This is the difference between building a system and building an organism.
                         </p>
                     </div>
 
-                    <p>In Part 1, we installed the compounding mindset. Now we upgrade to anti-fragility. This isn't about being unbreakable. It's about being <strong>breakable in the right ways</strong>—where breaks become features, not bugs.</p>
+                    <p>In Part 1, we installed the compounding mindset. Now we upgrade to anti-fragility. This isn't about being unbreakable. It's about being <strong>breakable in the right ways</strong>-where breaks become features, not bugs.</p>
                     
                     <div class="note">
-                        <h4 style="text-align: center;"><i class="fas fa-server"></i> The System Upgrade</h4><br>
+                        <div class="note-header">
+                            <i class="fas fa-server"></i>
+                            <h4>The System Upgrade</h4>
+                        </div>
                         <p><strong>Fragile systems</strong> hide from stress. <strong>Robust systems</strong> withstand stress. <strong>Anti-fragile systems</strong> demand stress because it's how they upgrade. Think of it as your system's self-improvement protocol: every challenge is an opportunity to install a patch that makes you better than before.</p>
                     </div>
                 </div>
 
                 <div class="simple-divider"></div>
 
-                <!-- The Three System States -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Three System States</h3>
                     <p>Your life can operate in one of three modes. The mode determines how you respond to volatility.</p>
 
@@ -128,7 +127,7 @@
                     </div>
 
                     <div class="simple-box">
-                        <h4 style="text-align: center;">The Critical Distinction</h4><br>
+                        <h4>The Critical Distinction</h4>
                         <p>Robustness is static defense. Anti-fragility is dynamic offense.</p>
                         <p><strong>Robustness asks:</strong> "How can I protect my system from this?"</p>
                         <p><strong>Anti-fragility asks:</strong> "How can this challenge make my system better than it was before?"</p>
@@ -138,69 +137,92 @@
 
                 <div class="simple-divider"></div>
 
-                <!-- The Four Anti-fragile Protocols -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Four Anti-fragile Protocols</h3>
                     <p>These are the system-level patterns that create anti-fragility.</p>
 
-                    <div class="framework-grid">
-                        <div class="framework-item">
-                            <div class="framework-icon">⚖️</div>
+                    <div class="characteristics">
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
                             <h4>1. Optionality Protocol</h4>
                             <p><strong>The Code:</strong> Preserve options, especially when uncertainty is high.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function makeDecision(uncertainty) {
-    if (uncertainty > threshold) {
-        preserveOptions();
-        gatherMoreData();
-    } else {
-        commitToBestOption();
-    }
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Optionality Decision Function</div>
+                                <div class="code-content">
+                                    function makeDecision(uncertainty) {<br>
+                                    &nbsp;&nbsp;if (uncertainty > threshold) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;preserveOptions();<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;gatherMoreData();<br>
+                                    &nbsp;&nbsp;} else {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;commitToBestOption();<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Why It Works:</strong> Options have asymmetric upside (unlimited potential) with limited downside (small cost to preserve). In volatile environments, optionality is more valuable than optimization.</p>
                         </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">🏋️</div>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
                             <h4>2. Stress Inoculation</h4>
                             <p><strong>The Code:</strong> Small, frequent exposures to manageable stress.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function stressInoculation() {
-    const smallStress = generateControlledChallenge();
-    exposeSystem(smallStress);
-    monitorResponse();
-    if (responsePositive) {
-        increaseStressSlightly();
-    }
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Stress Inoculation Function</div>
+                                <div class="code-content">
+                                    function stressInoculation() {<br>
+                                    &nbsp;&nbsp;const smallStress = generateControlledChallenge();<br>
+                                    &nbsp;&nbsp;exposeSystem(smallStress);<br>
+                                    &nbsp;&nbsp;monitorResponse();<br>
+                                    &nbsp;&nbsp;if (responsePositive) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;increaseStressSlightly();<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Why It Works:</strong> Like vaccines for chaos. Small exposures build immunity to larger stressors. Muscles grow through micro-tears. Systems strengthen through micro-challenges.</p>
                         </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">🔄</div>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
                             <h4>3. Redundancy & Decoupling</h4>
                             <p><strong>The Code:</strong> Build in backups and reduce interdependencies.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function buildSystem() {
-    addRedundancy(criticalComponents);
-    decoupleInterdependencies();
-    createFailoverPaths();
-    testIsolation();
-}</pre>
-                            <p><strong>Why It Works:</strong> Single points of failure create fragility. Redundancy creates robustness. Decoupling creates anti-fragility—components can fail without crashing the whole system.</p>
+                            <div class="code-block">
+                                <div class="code-header">System Building Function</div>
+                                <div class="code-content">
+                                    function buildSystem() {<br>
+                                    &nbsp;&nbsp;addRedundancy(criticalComponents);<br>
+                                    &nbsp;&nbsp;decoupleInterdependencies();<br>
+                                    &nbsp;&nbsp;createFailoverPaths();<br>
+                                    &nbsp;&nbsp;testIsolation();<br>
+                                    }
+                                </div>
+                            </div>
+                            <p><strong>Why It Works:</strong> Single points of failure create fragility. Redundancy creates robustness. Decoupling creates anti-fragility-components can fail without crashing the whole system.</p>
                         </div>
-                        <div class="framework-item">
-                            <div class="framework-icon">🎯</div>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-hand-point-up"></i>
+                            </div>
                             <h4>4. Skin in the Game</h4>
                             <p><strong>The Code:</strong> Ensure you have something meaningful to lose.</p>
-                            <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function evaluateDecision() {
-    const personalRisk = calculatePersonalExposure();
-    if (personalRisk < threshold) {
-        flagAs("theoretical");
-    } else {
-        flagAs("meaningful");
-        increaseAttention();
-    }
-}</pre>
+                            <div class="code-block">
+                                <div class="code-header">Risk Evaluation Function</div>
+                                <div class="code-content">
+                                    function evaluateDecision() {<br>
+                                    &nbsp;&nbsp;const personalRisk = calculatePersonalExposure();<br>
+                                    &nbsp;&nbsp;if (personalRisk < threshold) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flagAs("theoretical");<br>
+                                    &nbsp;&nbsp;} else {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flagAs("meaningful");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;increaseAttention();<br>
+                                    &nbsp;&nbsp;}<br>
+                                    }
+                                </div>
+                            </div>
                             <p><strong>Why It Works:</strong> No risk, no learning. No exposure, no adaptation. When you have skin in the game, your system pays attention. Attention leads to learning leads to adaptation.</p>
                         </div>
                     </div>
@@ -208,31 +230,39 @@ function evaluateDecision() {
 
                 <div class="simple-divider"></div>
 
-                <!-- The Barbell Strategy -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Barbell Strategy: Anti-fragile Risk Architecture</h3>
                     <p>The most practical anti-fragile pattern: how to structure your resources.</p>
 
                     <div class="simple-box">
-                        <h4 style="text-align:center;">The Barbell Explained</h4><br>
-                        <p>Place 85-90% of resources in <strong>extremely safe</strong> (left side). Place 10-15% in <strong>extremely risky with unlimited upside</strong> (right side). <strong>Avoid the middle</strong>—moderately risky investments with limited upside.</p>
+                        <h4>The Barbell Explained</h4>
+                        <p>Place 85-90% of resources in <strong>extremely safe</strong> (left side). Place 10-15% in <strong>extremely risky with unlimited upside</strong> (right side). <strong>Avoid the middle</strong>-moderately risky investments with limited upside.</p>
                     </div>
 
-                    <div class="applications">
-                        <div class="application">
-                            <h4><i class="fas fa-briefcase"></i> Career Barbell</h4>
+                    <div class="characteristics">
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Career Barbell</h4>
                             <p><strong>Safe side (85%):</strong> Stable job that pays bills, provides benefits, covers essentials.</p>
                             <p><strong>Risky side (15%):</strong> Ambitious side project, learning risky skill, starting micro-business.</p>
                             <p><strong>Avoid:</strong> "Safe" corporate ladder with 2% annual raises and high political risk.</p>
                         </div>
-                        <div class="application">
-                            <h4><i class="fas fa-brain"></i> Learning Barbell</h4>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Learning Barbell</h4>
                             <p><strong>Safe side (85%):</strong> Deep mastery of one valuable, timeless skill.</p>
                             <p><strong>Risky side (15%):</strong> Exploration of seemingly irrelevant, emerging fields.</p>
                             <p><strong>Avoid:</strong> Superficial knowledge of everything popular right now.</p>
                         </div>
-                        <div class="application">
-                            <h4><i class="fas fa-users"></i> Relationship Barbell</h4>
+                        <div class="characteristic">
+                            <div class="characteristic-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Relationship Barbell</h4>
                             <p><strong>Safe side (85%):</strong> Deep relationships with few trusted people.</p>
                             <p><strong>Risky side (15%):</strong> Meeting diverse, challenging thinkers outside your bubble.</p>
                             <p><strong>Avoid:</strong> Large networks of casual acquaintances that drain energy.</p>
@@ -240,27 +270,35 @@ function evaluateDecision() {
                     </div>
 
                     <div class="note">
-                        <h4><i class="fas fa-shield-alt"></i> The Anti-fragile Architecture</h4>
-                        <p>The barbell creates <strong>downside protection</strong> (safe side ensures survival) with <strong>unlimited upside</strong> (risky side can pay off massively). The middle—moderate risk—offers the worst of both: limited upside with meaningful downside. Most people live in the middle. Anti-fragile systems avoid it.</p>
+                        <div class="note-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>The Anti-fragile Architecture</h4>
+                        </div>
+                        <p>The barbell creates <strong>downside protection</strong> (safe side ensures survival) with <strong>unlimited upside</strong> (risky side can pay off massively). The middle-moderate risk-offers the worst of both: limited upside with meaningful downside. Most people live in the middle. Anti-fragile systems avoid it.</p>
                     </div>
                 </div>
 
                 <div class="simple-divider"></div>
 
-                <!-- The Lindy Effect -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Lindy Effect: Time as Stress Test</h3>
                     <p>How to identify what's anti-fragile before you invest in it.</p>
 
                     <div class="characteristics">
                         <div class="characteristic">
-                            <h4><i class="fas fa-hourglass"></i> The Lindy Principle</h4>
+                            <div class="characteristic-icon">
+                                <i class="fas fa-hourglass"></i>
+                            </div>
+                            <h4>The Lindy Principle</h4>
                             <p><strong>The Rule:</strong> The future life expectancy of something is proportional to its current age.</p>
                             <p><strong>Translation:</strong> What has lasted is likely to last. A 100-year-old book will likely be read in 100 years. A 1-year-old app will likely be gone in 1 year.</p>
                             <p><strong>System Analog:</strong> Technologies, ideas, and practices that have survived decades of volatility have proven their anti-fragility. New things haven't been stress-tested.</p>
                         </div>
                         <div class="characteristic">
-                            <h4><i class="fas fa-filter"></i> The Lindy Filter</h4>
+                            <div class="characteristic-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h4>The Lindy Filter</h4>
                             <p><strong>Application:</strong> When choosing what to learn, build, or adopt, ask: "Has this survived 20+ years of changing conditions?"</p>
                             <p><strong>Examples that pass:</strong> Books, meditation, strength training, writing, mathematics.</p>
                             <p><strong>Examples that fail:</strong> Latest social media platform, trending diet, new productivity app.</p>
@@ -271,33 +309,28 @@ function evaluateDecision() {
 
                 <div class="simple-divider"></div>
 
-                <!-- Installation Protocol -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Anti-fragile Installation Protocol</h3>
                     <p>How to upgrade your system from fragile/robust to anti-fragile.</p>
 
-                    <div class="mastery-stages">
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">1</div>
+                    <div class="process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
                                 <h4>Identify Fragilities</h4>
-                            </div>
-                            <div class="stage-description">
                                 <p><strong>The Audit:</strong> List your single points of failure:</p>
                                 <ul>
                                     <li>What would break you if it failed? (Job, relationship, health)</li>
                                     <li>Where are you over-optimized? (Specialized skills, narrow income)</li>
                                     <li>What dependencies create fragility? (Single client, specific location)</li>
                                 </ul>
-                                <p><strong>The Upgrade:</strong> Each fragility is an upgrade opportunity. The goal isn't to eliminate all risk—it's to ensure no single risk can crash your system.</p>
+                                <p><strong>The Upgrade:</strong> Each fragility is an upgrade opportunity. The goal isn't to eliminate all risk-it's to ensure no single risk can crash your system.</p>
                             </div>
                         </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">2</div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
                                 <h4>Implement Barbell Architecture</h4>
-                            </div>
-                            <div class="stage-description">
                                 <p><strong>The Design:</strong> For each critical area (career, finances, skills, relationships):</p>
                                 <ol>
                                     <li>Identify the extremely safe 85%</li>
@@ -307,12 +340,10 @@ function evaluateDecision() {
                                 <p><strong>The Test:</strong> Can your safe side survive worst-case scenarios? Does your risky side have genuine upside potential? Is the middle gone?</p>
                             </div>
                         </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">3</div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
                                 <h4>Install Stress Inoculation</h4>
-                            </div>
-                            <div class="stage-description">
                                 <p><strong>The Protocol:</strong> Weekly controlled stress exposures:</p>
                                 <ul>
                                     <li><strong>Physical:</strong> Cold showers, fasting, intense exercise</li>
@@ -323,23 +354,25 @@ function evaluateDecision() {
                                 <p><strong>The Dosage:</strong> Small enough to be manageable, frequent enough to build immunity. Like vaccine boosters for chaos.</p>
                             </div>
                         </div>
-                        <div class="mastery-stage">
-                            <div class="stage-header">
-                                <div class="stage-icon">4</div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
                                 <h4>Apply Lindy Filter</h4>
-                            </div>
-                            <div class="stage-description">
                                 <p><strong>The Filter:</strong> Before adopting any new technology, method, or belief:</p>
-                                <pre style="background: rgba(0,0,0,0.05); padding: 1rem; border-radius: 5px; margin: 1rem 0;">
-function lindyFilter(item) {
-    if (item.age < 10) {
-        return "Too new, proceed with caution";
-    } else if (item.age >= 10 && item.age < 50) {
-        return "Possibly robust, not proven anti-fragile";
-    } else {
-        return "Lindy proven, likely anti-fragile";
-    }
-}</pre>
+                                <div class="code-block">
+                                    <div class="code-header">Lindy Filter Function</div>
+                                    <div class="code-content">
+                                        function lindyFilter(item) {<br>
+                                        &nbsp;&nbsp;if (item.age < 10) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return "Too new, proceed with caution";<br>
+                                        &nbsp;&nbsp;} else if (item.age >= 10 && item.age < 50) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return "Possibly robust, not proven anti-fragile";<br>
+                                        &nbsp;&nbsp;} else {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return "Lindy proven, likely anti-fragile";<br>
+                                        &nbsp;&nbsp;}<br>
+                                        }
+                                    </div>
+                                </div>
                                 <p><strong>The Bias:</strong> Default to old solutions unless new ones offer 10x improvement. Most "innovation" is fragility in disguise.</p>
                             </div>
                         </div>
@@ -348,8 +381,7 @@ function lindyFilter(item) {
 
                 <div class="simple-divider"></div>
 
-                <!-- Anti-fragile Metrics -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>Anti-fragile Metrics: Measuring What Matters</h3>
                     <p>How to know your system is becoming anti-fragile.</p>
 
@@ -373,7 +405,7 @@ function lindyFilter(item) {
                     </div>
 
                     <div class="simple-box">
-                        <h4><i class="fas fa-chart-line"></i> The Weekly Stress Test</h4>
+                        <h4>The Weekly Stress Test</h4>
                         <p>Each week, intentionally introduce one small stressor and measure:</p>
                         <ol>
                             <li><strong>Response time:</strong> How quickly did you adapt?</li>
@@ -387,12 +419,11 @@ function lindyFilter(item) {
 
                 <div class="simple-divider"></div>
 
-                <!-- The Anti-fragile Mantra -->
-                <div class="article-section fade-in">
+                <div class="article-section">
                     <h3>The Anti-fragile Mantra</h3>
                     
-                    <div class="simple-box" style="text-align:center; padding:2rem;">
-                        <p style="font-size:1.1rem; font-style:italic; line-height:1.8;">
+                    <div class="simple-box mantra-box">
+                        <p class="mantra-text">
                             Let my system break in the right ways.<br>
                             Let stress be my upgrade protocol.<br>
                             Let volatility be my optimization data.<br>
@@ -412,25 +443,23 @@ function lindyFilter(item) {
 
                 <div class="simple-divider"></div>
 
-                <!-- Navigation -->
                 <div class="navigation">
                     <a href="part-1-compounding-mindset.html" class="nav-link-backward">
                         <i class="fas fa-arrow-left"></i> Previous: Compounding Mindset
                     </a>
-                    <a href="part-3-sustainable-growth.html" class="nav-link-primary">
+                    <a href="part-3-sustainable-growth.html" class="nav-link-forward">
                         Continue to Part 3: Sustainable Growth <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <div class="progress">
-                    Part 2 of 6 • Systems That Last Series • Architecture Layer
+                    Part 2 of 6 - Systems That Last Series - Architecture Layer
                 </div>
 
             </article>
 
-            <!-- Footer -->
             <div class="simple-footer">
-                <p>Olem's OS · 2026</p>
+                <p>Olem's OS - 2026</p>
                 <p class="footer-subtext">Installing what works, uninstalling what doesn't.</p>
             </div>
         </main>
@@ -438,4 +467,4 @@ function lindyFilter(item) {
     
     <script src="../../js/script.js"></script>
 </body>
-</html>
+    </html>
