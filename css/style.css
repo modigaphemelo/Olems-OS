@@ -197,7 +197,6 @@ body {
     margin: 0;
 }
 
-/* Installation Path - Perfected */
 .installation-path {
     margin: 3rem auto;
     max-width: 700px;
@@ -408,7 +407,6 @@ body {
     border-color: rgba(0, 168, 255, 0.3);
 }
 
-/* Step completion states */
 .path-step.completed .step-number {
     background: var(--accent);
     color: white;
@@ -427,11 +425,6 @@ body {
 
 .path-step.completed h4 {
     color: var(--accent-light);
-}
-
-/* Remove old path connector styles */
-.path-connector::before {
-    display: none;
 }
 
 .main-content {
@@ -2010,7 +2003,6 @@ h2 {
         font-size: 1rem;
     }
 
-    /* Installation Path Mobile */
     .installation-path {
         margin: 2rem auto;
         padding: 0;
@@ -2166,7 +2158,6 @@ h2 {
         padding: 0.5rem;
     }
 
-    /* Installation Path Mobile Small */
     .installation-path::before {
         display: none;
     }
@@ -2224,7 +2215,6 @@ h2 {
     .series-part:nth-child(4) { animation-delay: 0.4s; }
     .series-part:nth-child(5) { animation-delay: 0.5s; }
 
-    /* Installation Path Animation */
     .path-step {
         opacity: 0;
         transform: translateX(-20px);
